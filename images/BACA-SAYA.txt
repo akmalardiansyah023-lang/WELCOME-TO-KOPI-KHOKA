@@ -1,0 +1,2 @@
+Foto halaman Beranda: simpan sebagai hero.jpg di folder ini.
+Disarankan portrait rasio 4:5, misalnya 1200x1500 px.

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | Kopi Khoka</title>
+  <meta name="description" content="Daftar menu Kopi Khoka. Klik untuk memesan langsung lewat WhatsApp atau Instagram.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="halaman-menu">
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="index.html" class="brand">Kopi Khoka<span class="brand-titik"></span></a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="menu.html" class="active" aria-current="page">Menu</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu">
+      <div class="wrap">
+        <div class="section-head">
+          <h1 class="judul-halaman">Menu Kopi Khoka</h1>
+          <p>Klik "Pesan lewat WA" pada menu yang kamu mau, atau pakai tombol WhatsApp dan Instagram di bagian bawah layar.</p>
+        </div>
+
+        <div class="filter" role="group" aria-label="Filter menu">
+          <button type="button" class="active" data-filter="semua" aria-pressed="true">Semua</button>
+          <button type="button" data-filter="kopi" aria-pressed="false">Kopi</button>
+          <button type="button" data-filter="nonkopi" aria-pressed="false">Non-Kopi</button>
+          <button type="button" data-filter="makanan" aria-pressed="false">Makanan</button>
+          <button type="button" data-filter="camilan" aria-pressed="false">Camilan</button>
+        </div>
+
+        <ul class="menu-list">
+          <li class="menu-item" data-cat="kopi">
+            <figure class="menu-foto">
+              <img src="images/menu/khoka_aren_soft.png" alt="Khoka Aren Soft" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Khoka Aren Soft</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Racikan khas Khoka dengan gula aren, rasa kopinya lebih ringan.</p>
+              <button type="button" class="btn-pesan" data-nama="Khoka Aren Soft" aria-label="Pesan Khoka Aren Soft lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="kopi">
+            <figure class="menu-foto">
+              <img src="images/menu/khoka_aren_strong.png" alt="Khoka Aren Strong" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Khoka Aren Strong</h2><span class="dots"></span><span class="price price-tanya">17.000</span></div>
+              <p>Racikan khas Khoka dengan gula aren, rasa kopinya lebih pekat.</p>
+              <button type="button" class="btn-pesan" data-nama="Khoka Aren Strong" aria-label="Pesan Khoka Aren Strong lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="kopi">
+            <figure class="menu-foto">
+              <img src="images/menu/kopi_butterscotch.png" alt="Kopi Butterscotch" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Kopi Butterscotch</h2><span class="dots"></span><span class="price price-tanya">18.000</span></div>
+              <p>Kopi dengan rasa butterscotch yang manis dan wangi.</p>
+              <button type="button" class="btn-pesan" data-nama="Kopi Butterscotch" aria-label="Pesan Kopi Butterscotch lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="kopi">
+            <figure class="menu-foto">
+              <img src="images/menu/kopi_pandan.png" alt="Kopi Pandan" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Kopi Pandan</h2><span class="dots"></span><span class="price price-tanya">18.000</span></div>
+              <p>Kopi dengan rasa pandan yang harum.</p>
+              <button type="button" class="btn-pesan" data-nama="Kopi Pandan" aria-label="Pesan Kopi Pandan lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="kopi">
+            <figure class="menu-foto">
+              <img src="images/menu/kopi_banana.png" alt="Kopi Banana" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Kopi Banana</h2><span class="dots"></span><span class="price price-tanya">18.000</span></div>
+              <p>Kopi dengan rasa pisang yang manis.</p>
+              <button type="button" class="btn-pesan" data-nama="Kopi Banana" aria-label="Pesan Kopi Banana lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="kopi">
+            <figure class="menu-foto">
+              <img src="images/menu/kopi_caramel.png" alt="Kopi Caramel" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Kopi Caramel</h2><span class="dots"></span><span class="price price-tanya">18.000</span></div>
+              <p>Kopi dengan rasa karamel yang manis.</p>
+              <button type="button" class="btn-pesan" data-nama="Kopi Caramel" aria-label="Pesan Kopi Caramel lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="kopi">
+            <figure class="menu-foto">
+              <img src="images/menu/kopi_strawberry.png" alt="Kopi Strawberry" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Kopi Strawberry</h2><span class="dots"></span><span class="price price-tanya">18.000</span></div>
+              <p>Kopi dengan rasa stroberi, manis dan segar.</p>
+              <button type="button" class="btn-pesan" data-nama="Kopi Strawberry" aria-label="Pesan Kopi Strawberry lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="kopi">
+            <figure class="menu-foto">
+              <img src="images/menu/americano.png" alt="Americano" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Americano</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Espresso yang dicampur air, rasa kopinya bersih dan tegas.</p>
+              <button type="button" class="btn-pesan" data-nama="Americano" aria-label="Pesan Americano lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="kopi">
+            <figure class="menu-foto">
+              <img src="images/menu/latte.png" alt="Latte" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Latte</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Espresso dengan susu yang lembut.</p>
+              <button type="button" class="btn-pesan" data-nama="Latte" aria-label="Pesan Latte lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="kopi">
+            <figure class="menu-foto">
+              <img src="images/menu/cappuccino.png" alt="Cappuccino" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Cappuccino</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Espresso, susu, dan busa susu yang tebal.</p>
+              <button type="button" class="btn-pesan" data-nama="Cappuccino" aria-label="Pesan Cappuccino lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="kopi">
+            <figure class="menu-foto">
+              <img src="images/menu/kopi_susu_hot.png" alt="Kopi Susu Hot" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Kopi Susu Hot</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Kopi susu yang disajikan hangat.</p>
+              <button type="button" class="btn-pesan" data-nama="Kopi Susu Hot" aria-label="Pesan Kopi Susu Hot lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+  
+          <li class="menu-item" data-cat="nonkopi">
+            <figure class="menu-foto">
+              <img src="images/menu/matcha_ice.png" alt="Matcha" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Matcha</h2><span class="dots"></span><span class="price price-tanya">18.000</span></div>
+              <p>Minuman matcha yang lembut.</p>
+              <button type="button" class="btn-pesan" data-nama="Matcha" aria-label="Pesan Matcha lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="nonkopi">
+            <figure class="menu-foto">
+              <img src="images/menu/red_velvet.png" alt="Red Velvet" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Red Velvet</h2><span class="dots"></span><span class="price price-tanya">18.000</span></div>
+              <p>Minuman red velvet yang manis dan lembut.</p>
+              <button type="button" class="btn-pesan" data-nama="Red Velvet" aria-label="Pesan Red Velvet lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="nonkopi">
+            <figure class="menu-foto">
+              <img src="images/menu/teh_tarik.png" alt="Teh Tarik" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Teh Tarik</h2><span class="dots"></span><span class="price price-tanya">18.000</span></div>
+              <p>Teh susu manis yang ditarik hingga berbusa.</p>
+              <button type="button" class="btn-pesan" data-nama="Teh Tarik" aria-label="Pesan Teh Tarik lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="nonkopi">
+            <figure class="menu-foto">
+              <img src="images/menu/green_tea.png" alt="Green Tea" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Green Tea</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Teh hijau yang segar.</p>
+              <button type="button" class="btn-pesan" data-nama="Green Tea" aria-label="Pesan Green Tea lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="nonkopi">
+            <figure class="menu-foto">
+              <img src="images/menu/thai_tea.png" alt="Thai Tea" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Thai Tea</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Teh Thailand yang manis dan creamy.</p>
+              <button type="button" class="btn-pesan" data-nama="Thai Tea" aria-label="Pesan Thai Tea lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="nonkopi">
+            <figure class="menu-foto">
+              <img src="images/menu/taro_ice.png" alt="Taro" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Taro</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Minuman taro yang manis dan creamy.</p>
+              <button type="button" class="btn-pesan" data-nama="Taro" aria-label="Pesan Taro lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="nonkopi">
+            <figure class="menu-foto">
+              <img src="images/menu/coklat_ice.png" alt="Cokelat" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Cokelat</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Minuman cokelat yang manis dan lembut.</p>
+              <button type="button" class="btn-pesan" data-nama="Cokelat" aria-label="Pesan Cokelat lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="nonkopi">
+            <figure class="menu-foto">
+              <img src="images/menu/milo_ice.png" alt="Milo" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Milo</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Minuman Milo, manis dan gurih.</p>
+              <button type="button" class="btn-pesan" data-nama="Milo" aria-label="Pesan Milo lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="nonkopi">
+            <figure class="menu-foto">
+              <img src="images/menu/lemon_tea.png" alt="Lemon Tea" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Lemon Tea</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Teh dengan perasan lemon yang segar.</p>
+              <button type="button" class="btn-pesan" data-nama="Lemon Tea" aria-label="Pesan Lemon Tea lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="nonkopi">
+            <figure class="menu-foto">
+              <img src="images/menu/leci_tea.png" alt="Leci Tea" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Leci Tea</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Teh dengan rasa leci yang manis dan segar.</p>
+              <button type="button" class="btn-pesan" data-nama="Leci Tea" aria-label="Pesan Leci Tea lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="nonkopi">
+            <figure class="menu-foto">
+              <img src="images/menu/melon_spark.png" alt="Melon Spark" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Melon Spark</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Minuman bersoda rasa melon, segar dan bergelembung.</p>
+              <button type="button" class="btn-pesan" data-nama="Melon Spark" aria-label="Pesan Melon Spark lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="nonkopi">
+            <figure class="menu-foto">
+              <img src="images/menu/manggo_fizz.png" alt="Mango Fizz" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Mango Fizz</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Minuman bersoda rasa mangga, segar dan manis.</p>
+              <button type="button" class="btn-pesan" data-nama="Mango Fizz" aria-label="Pesan Mango Fizz lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="nonkopi">
+            <figure class="menu-foto">
+              <img src="images/menu/strawberry_fizz.png" alt="Strawberry Fizz" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Strawberry Fizz</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Minuman bersoda rasa stroberi, segar dan manis.</p>
+              <button type="button" class="btn-pesan" data-nama="Strawberry Fizz" aria-label="Pesan Strawberry Fizz lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="nonkopi">
+            <figure class="menu-foto">
+              <img src="images/menu/leci_fizz.png" alt="Leci Fizz" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Leci Fizz</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Minuman bersoda rasa leci, segar dan manis.</p>
+              <button type="button" class="btn-pesan" data-nama="Leci Fizz" aria-label="Pesan Leci Fizz lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="nonkopi">
+            <figure class="menu-foto">
+              <img src="images/menu/lemon_tea_fizz.png" alt="Lemon Tea Fizz" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Lemon Tea Fizz</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Lemon tea yang dipadu soda, segar dan sedikit asam.</p>
+              <button type="button" class="btn-pesan" data-nama="Lemon Tea Fizz" aria-label="Pesan Lemon Tea Fizz lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="makanan">
+            <figure class="menu-foto">
+              <img src="images/menu/mie_goreng_telur.png" alt="Mie Goreng Telur" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Mie Goreng Telur</h2><span class="dots"></span><span class="price">Rp12.000</span></div>
+              <p>Mie goreng dengan telur ceplok dan irisan cabai.</p>
+              <button type="button" class="btn-pesan" data-nama="Mie Goreng Telur" data-harga="Rp12.000" aria-label="Pesan Mie Goreng Telur lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="makanan">
+            <figure class="menu-foto">
+              <img src="images/menu/mie_soto_telur.png" alt="Mie Soto Telur" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Mie Soto Telur</h2><span class="dots"></span><span class="price price-tanya">12.000</span></div>
+              <p>Mie berkuah soto dengan telur.</p>
+              <button type="button" class="btn-pesan" data-nama="Mie Soto Telur" aria-label="Pesan Mie Soto Telur lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="camilan">
+            <figure class="menu-foto">
+              <img src="images/menu/khoka_sweet_toast.png" alt="Khoka Sweet Toast" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Khoka Sweet Toast</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Roti bakar manis khas Khoka.</p>
+              <button type="button" class="btn-pesan" data-nama="Khoka Sweet Toast" aria-label="Pesan Khoka Sweet Toast lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="camilan">
+            <figure class="menu-foto">
+              <img src="images/menu/smoky_bills_pizza.png" alt="Smoky Bills Pizza" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Smoky Bills Pizza</h2><span class="dots"></span><span class="price price-tanya">20.000</span></div>
+              <p>Pizza dengan cita rasa smoky, disajikan hangat.</p>
+              <button type="button" class="btn-pesan" data-nama="Smoky Bills Pizza" aria-label="Pesan Smoky Bills Pizza lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="camilan">
+            <figure class="menu-foto">
+              <img src="images/menu/chicken_mushroom_pizza.png" alt="Chicken Mushroom Pizza" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Chicken Mushroom Pizza</h2><span class="dots"></span><span class="price price-tanya">20.000</span></div>
+              <p>Pizza dengan topping ayam dan jamur.</p>
+              <button type="button" class="btn-pesan" data-nama="Chicken Mushroom Pizza" aria-label="Pesan Chicken Mushroom Pizza lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="camilan">
+            <figure class="menu-foto">
+              <img src="images/menu/french_fries.png" alt="French Fries" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>French Fries</h2><span class="dots"></span><span class="price price-tanya">12.000</span></div>
+              <p>Kentang goreng yang renyah.</p>
+              <button type="button" class="btn-pesan" data-nama="French Fries" aria-label="Pesan French Fries lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="camilan">
+            <figure class="menu-foto">
+              <img src="images/menu/fried_meatballs.png" alt="Fried Meatballs" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Fried Meatballs</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Bakso goreng, gurih dan hangat.</p>
+              <button type="button" class="btn-pesan" data-nama="Fried Meatballs" aria-label="Pesan Fried Meatballs lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="camilan">
+            <figure class="menu-foto">
+              <img src="images/menu/tahu_walik.png" alt="Tahu Walik" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Tahu Walik</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Tahu goreng dengan isian di dalamnya, gurih dan renyah.</p>
+              <button type="button" class="btn-pesan" data-nama="Tahu Walik" aria-label="Pesan Tahu Walik lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="camilan">
+            <figure class="menu-foto">
+              <img src="images/menu/banana_fritter.png" alt="Banana Fritter" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Banana Fritter</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Pisang goreng yang renyah, disajikan hangat.</p>
+              <button type="button" class="btn-pesan" data-nama="Banana Fritter" aria-label="Pesan Banana Fritter lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+          <li class="menu-item" data-cat="camilan">
+            <figure class="menu-foto">
+              <img src="images/menu/cassava_chips.png" alt="Cassava Chips" width="160" height="160">
+            </figure>
+            <div class="menu-isi">
+              <div class="row"><h2>Cassava Chips</h2><span class="dots"></span><span class="price price-tanya">15.000</span></div>
+              <p>Keripik singkong yang renyah.</p>
+              <button type="button" class="btn-pesan" data-nama="Cassava Chips" aria-label="Pesan Cassava Chips lewat WhatsApp">Pesan lewat WA</button>
+            </div>
+          </li>
+        </ul>
+
+        <p class="menu-catatan">Harga bisa berubah sewaktu-waktu.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="pesan-bar" role="region" aria-label="Pesan langsung">
+    <div class="wrap">
+      <p class="pesan-teks">Mau pesan? Klik langsung, kami balas secepatnya.</p>
+      <a href="https://wa.me/62822-9957-7380" class="btn btn-terang" data-aksi="wa" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://ig.me/m/kopi.khoka" class="btn btn-garis-terang" data-aksi="ig-dm" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="tahun"></span> Kopi Khoka. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

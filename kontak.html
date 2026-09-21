@@ -1,0 +1,90 @@
+';<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontak | Kopi Khoka</title>
+  <meta name="description" content="Alamat, jam buka, WhatsApp, dan Instagram Kopi Khoka.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="index.html" class="brand">Kopi Khoka<span class="brand-titik"></span></a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="kontak.html" class="active" aria-current="page">Kontak</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="kontak">
+      <div class="wrap kontak-grid">
+
+        <div class="kontak-info">
+          <h1 class="judul-halaman">Mampir atau kirim pesan</h1>
+          <p class="kontak-lead">Mau tanya menu, pesan tempat untuk rombongan, atau pesan antar? Kabari kami.</p>
+
+          <dl>
+            <dt>Alamat</dt>
+            <dd>Jl. Barombong Desa Panciro</dd>
+
+            <dt>Jam buka</dt>
+            <dd>Setiap hari, 09.00 - 01.00</dd>
+
+            <dt>WhatsApp</dt>
+            <dd><a href="https://wa.me/62822-9957-7380" data-aksi="wa" target="_blank" rel="noopener" class="nomor-wa">0822-9957-7380</a></dd>
+
+            <dt>Instagram</dt>
+            <dd><a href="https://instagram.com/kopi.khoka" data-aksi="ig" target="_blank" rel="noopener" class="nama-ig">@kopi.khoka</a></dd>
+          </dl>
+
+          <div class="aksi-baris">
+            <a href="https://wa.me/62822-9957-7380" class="btn btn-gelap" data-aksi="wa" target="_blank" rel="noopener">Chat WhatsApp</a>
+            <a href="https://ig.me/m/kopi.khoka" class="btn btn-garis-gelap" data-aksi="ig-dm" target="_blank" rel="noopener">Chat Instagram</a>
+          </div>
+        </div>
+
+        <form id="form-kontak" class="form" novalidate>
+          <div class="field">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" autocomplete="name" placeholder="Nama kamu">
+            <span class="error" aria-live="polite"></span>
+          </div>
+
+          <div class="field">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pertanyaan atau pesananmu"></textarea>
+            <span class="error" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" class="btn btn-gelap">Kirim lewat WhatsApp</button>
+          <p id="status" role="status" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="tahun"></span> Kopi Khoka. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
