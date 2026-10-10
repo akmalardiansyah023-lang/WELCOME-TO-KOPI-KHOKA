@@ -1,0 +1,8 @@
+# .htaccess (FILE BARU) - menyuntikkan db-connect.js ke halaman .html secara otomatis,
+# sehingga file .html tidak perlu diubah sama sekali. Butuh Apache (XAMPP/Laragon).
+<IfModule mod_substitute.c>
+  <FilesMatch "\.html$">
+    SetOutputFilter SUBSTITUTE
+    Substitute "s|</body>|<script src=\"db-connect.js\"></script></body>|i"
+  </FilesMatch>
+</IfModule>
